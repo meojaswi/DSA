@@ -1,0 +1,21 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        string str = to_string(x);
+        int len = str.length();
+        int j = len-1;
+        int i  = 0;
+        while(i<j){
+            if(str[i]!=str[j]){
+                return false;
+            }
+            i++;
+            j--;
+            }
+            return true;
+        }
+        
+};
+
+//solved using two pointer
+//TC = O(logX)
